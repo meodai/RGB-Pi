@@ -10,6 +10,7 @@
 
 html, body {
   padding: 0;
+  margin: 0;
 }
 
 body {
@@ -19,6 +20,24 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.banner {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  text-align: center;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding-top: 0.4em;
+}
+.banner a {
+  display: inline-block;
+  color: #fff;
+  padding: 1ex;
+  font-weight: 600;
 }
 
 .navigation {
@@ -35,6 +54,14 @@ a {
   position: relative;
   height: 75vh;
   background: linear-gradient(#170c3a 70%, #36167A);
+}
+.artwork__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -4vw;
+  z-index: 5;
 }
 .artwork__title {
   position: absolute;
