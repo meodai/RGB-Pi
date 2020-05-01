@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+    <title>form</title>
+
+    <link rel="stylesheet" href="style.scss">
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>     
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      
+    <!--script type='text/javascript'>
+
+(function()
+{
+  if( window.localStorage )
+  {
+    if( !localStorage.getItem('firstLoad') )
+    {
+      localStorage['firstLoad'] = true;
+      window.location.reload();
+    }  
+    else
+      localStorage.removeItem('firstLoad');
+  }
+})();
+
+  </script-->
+
+  </head>
+
+  <body>
+  <!-- START FORM -->
+
+
+                 <div style="text-align:center" class="single_pricelist_content">
+                     <br>
+                   <!--h1>Make your inquiry</h1-->
+
+		    <form action="sendmail.php.html" method="post" autocomplete="off">
+
+<table style="font-size:18px; width:350px;color: gray;" align="center">
+    <tr>
+    <td>SCART qty.<select name="scart" style="color: gray; border: 0px solid;" required>
+        <option value="0">&nbsp;0 </option>
+        <option value="1">&nbsp;1 </option>
+        <option value="2">&nbsp;2 </option>
+        <option value="3">&nbsp;3 </option>
+        <option value="4">&nbsp;4 </option>
+        <option value="5">&nbsp;5 </option>
+        
+      </select>
+        
+    <br><strike>JAMMA qty.</strike><select name="jamma" style="color: gray; border: 0px solid;" disabled>
+        <option value="0">&nbsp;0 </option>
+        <option value="1">&nbsp;1 </option>
+        <option value="2">&nbsp;2 </option>
+        <option value="3">&nbsp;3 </option>
+        <option value="4">&nbsp;4 </option>
+        <option value="5">&nbsp;5 </option>
+        
+      </select>
+        
+    <br><select name="country" style="color: gray; border: 0px solid;" required>
+        <option hidden selected disabled value>Destination&nbsp;&nbsp;&nbsp;&nbsp;</option>
+        <option value="SPA">Spain</option>
+        <option value="EUR">EU</option>
+        <option value="WORLD">World</option>
+      </select>
+        
+    <br><input size="12" autocomplete="on" style="border: 0px solid;border-radius:5px;" name="email" type="text" placeholder=" Email" required/>
+        
+        </td>
+    </tr>
+</table>
+
+
+    		      <br>
+			<input type="submit" class="learnmore_btn" value="Send request" /><br><br><br><br><br><br><br>
+            <!--a style="color:green" href="form_ordi.html">Ordinary shipping click here</a-->
+                
+		    </form>
+</div>
+
+
+  </body>
+</html>
