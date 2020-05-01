@@ -32,6 +32,7 @@ a {
   font-size: 1em;
   text-transform: uppercase;
   padding-top: 0.4em;
+
   a {
     display: inline-block;
     color: #fff;
@@ -144,7 +145,7 @@ a {
       background: #170c3a;
       position: absolute;
       bottom: 0;
-      height: 15px;
+      height: 1.5rem;
       animation: sunbeam 5s ease-in infinite both;
       box-shadow: 0 0 1em 0 #170c3a;
 
@@ -203,7 +204,7 @@ a {
     background: rgba(87, 193, 232, 0.35);
     position: absolute;
     bottom: 0;
-    height: 5px;
+    height: .5rem;
     animation: sunbeam 10s ease-out infinite both;
     box-shadow: 0 0 .1em 0 rgba(#fff,.75);
 
@@ -251,12 +252,12 @@ a {
 
 @keyframes sunbeam {
   from {
-    transform: translateY(2rem) scaleY(1);
+    transform: translateY(2vw) scaleY(1);
     opacity: 1;
   }
 
   to {
-    transform: translateY(-20rem) scaleY(.2);
+    transform: translateY(-14vw) scaleY(.2);
     opacity: 0;
   }
 
