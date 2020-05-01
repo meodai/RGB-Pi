@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel ./web/index.html",
-    "build": "cd web && parcel build ./web/*.html",
+    "start": "parcel ./index.html",
+    "build": "parcel build ./*.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
