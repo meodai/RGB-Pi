@@ -61,8 +61,11 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: -4vw;
+    margin-top: -3rem;
     z-index: 5;
+    img {
+      width: 12rem;
+    }
   }
 
   &__title {
@@ -72,7 +75,7 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
-    font-size: 5vw;
+    font-size: 3rem;
     font-weight: 900;
     color: #fff;
     //background: linear-gradient(to bottom, rgba(244, 216, 244, 1) 0%, rgba(226, 216, 241, 1) 50%, rgba(106, 76, 120, 1) 51%, rgba(195, 136, 188, 1) 100%);
@@ -87,8 +90,8 @@ a {
     z-index: 2;
     top: 50%;
     left: 50%;
-    font-size: 2vw;
-    margin-top: 2vw;
+    font-size: 2rem;
+    margin-top: 1.9rem;
     color: #f399d9;
     text-shadow: 1px 0 0 #ee55c9,
     -1px 0 0 #ee55c9,
@@ -98,7 +101,7 @@ a {
     -1px -1px .5em #ee55c9,
     1px -1px 1em #ee55c9,
     -1px 1px 1em #ee55c9;
-    transform: translate(-50%, -50%) rotate(-2deg);
+    transform: translate(-50%, -50%) rotate(-1.7deg);
     transform-origin: center center;
   }
 
@@ -135,8 +138,8 @@ a {
     background: linear-gradient(#f2ec4f, #c81548);
     transform: translate(-50%, -50%);
 
-    width: 25vw;
-    height: 25vw;
+    width: 20rem;
+    height: 20rem;
     border-radius: 50%;
     overflow: hidden;
 
@@ -145,7 +148,7 @@ a {
       background: #170c3a;
       position: absolute;
       bottom: 0;
-      height: 1.5rem;
+      height: 1rem;
       animation: sunbeam 5s ease-in infinite both;
       box-shadow: 0 0 1em 0 #170c3a;
 
@@ -460,4 +463,22 @@ a {
     top: 0%;
     opacity: 0;
   }
+}
+
+.crt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 1rem;
+  background-image:
+  repeating-linear-gradient(transparent 0,
+    rgba(0, 0, 0, .2) 3px,
+    transparent 6px),
+    url(crt.png);
+  background-blend-mode: overlay;
+  ;
+  background-size: 100% 100%;
+  width: 90rem;
+  height: 62rem;
+  transform: translate(calc(-50% + 4rem), -50%) scale(.5);
 }
